@@ -6,7 +6,8 @@ class Stack
         @size = 0
         @sum = 0
     end
-
+    
+    # O(1) 
     def push(number)
         @sum =@sum+number
         @size=@size+1
@@ -15,6 +16,7 @@ class Stack
         @max = Node.new(number, @max) if number >= self.max
     end
 
+    # O(1)
     def pop
         @size=@size-1
         @max = @max.next_node if @max.value == @first.value
@@ -24,10 +26,12 @@ class Stack
         item.value
     end
     
+    # O(1)
     def mean
         @sum.to_f/@size
     end
 
+    # O(1)
     def max
         @max.value if !@max.nil?
     end
