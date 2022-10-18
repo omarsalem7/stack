@@ -1,5 +1,5 @@
 # Stack
-## I implement a stack with a linked list rather than arrays for several reasons
+### I implement a stack with a linked list rather than arrays for several reasons
 
 - The array requires much space in memory when I need to push a new element or remove one, and it takes more time to perform these operations.
 ,and it takes more time to perform this operations.
